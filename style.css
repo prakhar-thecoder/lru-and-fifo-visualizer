@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(to bottom right, rgba(255, 0, 0, 0.15), rgba(0, 0, 255, 0.15)) !important;
+}
+
+.frame{
+    border: 2px solid red;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    /* width: 700% !important; */
+    /* padding: 0% 100% !important; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame-green{
+    border: 2px solid green;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    /* width: 700% !important; */
+    /* padding: 0% 100% !important; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame-container{
+    width: 10% !important;
+    margin-bottom: 2%;
+}
+
+#frames{
+    gap: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#fault{
+    border: none;
+}
+
+#page-no{
+    border: none;
+}
+
+.frame-container > .frame:nth-child(2){
+    border-top-width: 2px;
+}
+
+.frame-container > .frame:nth-last-child(2){
+    border-bottom-width: 2px;
+}
+
+.frame-container > .frame-green:nth-child(2){
+    border-top-width: 2px;
+}
+
+.frame-container > .frame-green:nth-last-child(2){
+    border-bottom-width: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    img{
+        width: 20% !important;
+    }
+    #header{
+        gap: 5% !important;
+        margin: 0px !important;
+    }
+    .container{
+        padding: 10% 5% !important;
+    }
+    body{
+        padding: .5% 5% !important;
+        overflow-x: hidden !important;
+    }
+    .frame-container{
+        width: 20% !important;
+    }
+    #frames{
+        gap: 10%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #navigation{
+        flex-direction: column-reverse !important;
+    }
+}
