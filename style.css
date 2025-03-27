@@ -39,6 +39,16 @@ body {
     border: none;
 }
 
+#fault.miss {
+    color: red;
+    font-weight: bold;
+}
+
+#fault.hit {
+    color: green;
+    font-weight: bold;
+}
+
 #page-no{
     border: none;
 }
